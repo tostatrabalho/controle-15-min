@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Controle de 15 Minutos</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
   <div class="container">
     <h1>Controle de 15 Minutos</h1>
-    <select id="colaborador-select"></select>
+    
+    <label for="colaborador-select">Colaborador:</label>
+    <select id="colaborador-select" title="Selecione um colaborador"></select>
+    
     <div class="buttons">
       <button onclick="registrar('entrou')">Entrar nos 15</button>
       <button onclick="registrar('voltou')">Voltar dos 15</button>
     </div>
+    
     <h2>Colaboradores em pausa</h2>
     <ul id="em-pausa"></ul>
   </div>
+
+  <!-- Script usando módulo ES6 -->
   <script type="module" src="script.js"></script>
 </body>
 </html>
